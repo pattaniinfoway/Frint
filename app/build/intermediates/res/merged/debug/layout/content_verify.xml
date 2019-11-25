@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.frint.frint.Verify"
+    tools:showIn="@layout/activity_verify">
+
+
+
+        <RelativeLayout
+            android:id="@+id/verify_bg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+          android:layout_alignParentTop="true"
+            android:background="@drawable/frint_final_03bg"
+            />
+    <ImageView
+        android:id="@+id/verify_bar"
+        android:layout_width="@dimen/progressbar_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/frint_final_03bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_bg"
+        android:id="@+id/verify_layout2"
+        >
+
+        <TextView
+            android:id="@+id/verify_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_activity_verify"
+        android:layout_marginTop="@dimen/edittext_topMargin1"
+            android:textAlignment="center"
+            android:textSize="@dimen/activity_title_fontSize"
+            android:textColor="@color/light_blue"
+            />
+        <EditText
+            android:id="@+id/verify_mob"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blueeditext"
+            android:padding="@dimen/padding5"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/verify_title"
+            android:layout_marginTop="@dimen/edittext_topMargin1"
+            android:inputType="number"
+            android:maxLength="10"
+            android:visibility="gone"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/font12"
+            />
+        <EditText
+            android:id="@+id/verify_otp"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/font12"
+            android:hint="@string/verify_otp_hint"
+            android:background="@drawable/blueeditext"
+            android:padding="@dimen/padding5"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/verify_mob"
+            android:layout_marginTop="@dimen/edittext_topMargin2"
+            android:inputType="text"
+            android:minEms="5"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/verify_layout2"
+        android:layout_marginTop="@dimen/edittext_topMargin1"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/padding35"
+        android:paddingRight="@dimen/padding35"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/verify_btn_otp"
+            android:layout_width="@dimen/button_width30"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/whitebutton_reset"
+            android:layout_marginRight="@dimen/padding20"
+            android:text="@string/verify_btn_otp"
+            android:onClick="onclick_Reset"
+            />
+
+
+        <Button
+            android:id="@+id/verify_btn_verify"
+            android:layout_width="@dimen/button_width30"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/redbutton"
+            android:text="@string/verify_btn_verify"
+            android:textColor="@color/textColorPrimary"
+            android:onClick="onClick_verify"
+
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

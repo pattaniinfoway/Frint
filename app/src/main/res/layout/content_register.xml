@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frint_final_02_bg_sm"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.frint.frint.Register"
+    tools:showIn="@layout/activity_register">
+
+    <RelativeLayout
+        android:id="@+id/progress_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/progressbar_top_margin">
+    <ImageView
+        android:layout_width="@dimen/progressbar_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/frint_final_02_bar"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/register_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_register"
+        android:layout_marginTop="@dimen/title_top_margin">
+
+        <TextView
+            android:id="@+id/Register_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_register"
+            android:textColor="@color/textColorPrimary"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/activity_title_fontSize"
+
+            />
+
+       <EditText
+           android:id="@+id/register_name"
+           android:layout_width="@dimen/edittext_width"
+           android:layout_height="wrap_content"
+           android:background="@drawable/edittext"
+           android:layout_below="@+id/Register_title"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/edittext_topMargin1"
+           android:gravity="center_horizontal|center_vertical"
+           android:padding="@dimen/padding5"
+           android:inputType="textPersonName"
+           android:hint="@string/register_name_hint"
+           android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/font12"
+
+           />
+
+        <EditText
+            android:id="@+id/register_mob"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_below="@+id/register_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/edittext_topMargin2"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/padding5"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/font12"
+            />
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_below="@+id/register_mob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/edittext_topMargin2"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/register_email_hint"
+            android:padding="@dimen/padding5"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="@dimen/font12"
+            />
+        <Button
+            android:id="@+id/register_submit"
+            android:layout_width="@dimen/submit_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/submit_TopMargin"
+            android:text="@string/submit"
+            android:background="@drawable/whitebutton"
+            android:textColor="@color/red"
+            android:onClick="onClick_register"
+            />
+    </RelativeLayout>
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/frint_final_02qupod"
+    android:layout_below="@+id/register_layout2"
+    android:layout_centerHorizontal="true"
+    />
+
+</RelativeLayout>

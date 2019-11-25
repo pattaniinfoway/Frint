@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--common dimens-->
+    <dimen name="activity_title_fontSize">16dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding35">35dp</dimen>
+    <dimen name="font12">12dp</dimen>
+    <dimen name="edittext_width">330dp</dimen>
+    <dimen name="button_width30">30dp</dimen>
+
+
+    <dimen name="progressbar_top_margin">7dp</dimen>
+    <dimen name="progressbar_width">200dp</dimen>
+    <dimen name="title_top_margin">80dp</dimen>
+
+    <dimen name="edittext_topMargin1">30dp</dimen>
+    <dimen name="edittext_topMargin2">10dp</dimen>
+    <dimen name="submit_TopMargin">35dp</dimen>
+    <dimen name="submit_width">180dp</dimen>
+
+</resources>
